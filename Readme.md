@@ -1,13 +1,13 @@
 # Web animation wrapper
 
-Web animations are rather cool, and seems ready to replace other solutions in future.
+A new Javascript API is rather cool, and seems ready to replace other solutions in future.
 
-Animation middleware wrapper over standard Web Animation Api.
+This middleware wraps over standard Animation API and helps to control it easily.
 
-A gracefull degradation is used with browsers without WAA support and no animation will run.
+A gracefull degradation is used for the browsers without Web Animations support and all the animations will be skipped.
 Or you can use a polyfill!
 
-## Basic usage
+## Usage examples
 
 ### Appear animation
 
@@ -80,4 +80,4 @@ an
 
 ##Demo
 
-See demo in ./demo folder!
+See the simple demo in ./demo folder!
