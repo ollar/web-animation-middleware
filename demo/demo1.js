@@ -1,7 +1,7 @@
 var $el = document.getElementById('demo');
 var $els = document.querySelectorAll('li');
 
-var md = new Middleware();
+var md = new WAM();
 
 md
     .prepare($el, {
@@ -21,7 +21,7 @@ md
     .step($el, {left: ['400px', '100px']}, {duration: 300, fill: 'forwards',})
     .go(() => console.log('complete'))
 
-var md2 = new Middleware();
+var md2 = new WAM();
 
 md2
     .prepare($els, {

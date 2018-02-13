@@ -1,16 +1,19 @@
-var Middleware = (function () {
+var WAM = (function () {
 'use strict';
-
-var Middleware = function() {};
 
 function checkAnimationAvailable(fn) {
     if (!Element.prototype.animate) {
+      // skip all steps
       return () => true;
     }
 
     return fn;
 }
 
+/**
+
+
+*/
 function chainAnimate(elems, steps, options, next) {
   var _elems = Array.prototype.slice.call(elems);
   var anim = _elems[0].animate(steps, options);
@@ -21,6 +24,8 @@ function chainAnimate(elems, steps, options, next) {
     anim.onfinish = next;
   }
 }
+
+var Middleware = function() {};
 
 Middleware.prototype.use = function(func) {
   this.go = (function(_go, _this) {
