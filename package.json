@@ -2,10 +2,10 @@
   "name": "web-animation-middleware",
   "version": "1.0.0",
   "description": "A middleware wrapper over web animation api",
-  "main": "dist/bundle.js",
+  "main": "dist/bundle.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup src/index.js --output.format iife --output.file dist/bundle.js --name WAM -w"
+    "build": "rollup src/index.js --output.format iife --output.file dist/bundle.iife.js --name WAM && rollup src/index.js --output.format cjs --output.file dist/bundle.cjs.js && rollup src/index.js --output.format es --output.file dist/bundle.es.js && rollup src/index.js --output.format umd --name WAM --output.file dist/bundle.umd.js"
   },
   "author": "ollar",
   "license": "ISC",

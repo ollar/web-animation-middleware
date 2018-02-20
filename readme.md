@@ -38,7 +38,7 @@ an.step($el, {opacity: [0, 1]}, {duration: 300})
 run animation
 
 ```javascript
-an.go(() => console.log(complete))
+an.go(() => console.log('complete'))
 ```
 
 ### Multiple elements animation
@@ -52,7 +52,7 @@ an.prepare($els, {opacity: 0});
 
 an.chain($els, {opacity: [0, 1]}, {duration: 100});
 
-an.go(() => console.log(complete));
+an.go(() => console.log('complete'));
 ```
 
 ### Mixing animations
@@ -69,7 +69,7 @@ an
     .prepare($els, {opacity: 0});
     .step($el, {opacity: [0, 1]}, {duration: 300})
     .chain($els, {opacity: [0, 1]}, {duration: 100})
-    .go(() => console.log(complete));
+    .go(() => console.log('complete'));
 ```
 
 ### Usefull links
@@ -77,6 +77,7 @@ an
 [https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)
 
 [https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
+
 
 ##Demo
 
